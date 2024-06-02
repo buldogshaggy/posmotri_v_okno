@@ -125,31 +125,11 @@ input:focus-visible {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  /* position: relative; */
   width: 19px;
   height: 19px;
   border: 1px #fff solid;
   cursor: pointer;
-}
-
-.search-form__checkbox:checked~.search-form__pseudo-checkbox:after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 1px;
-  top: 1px;
-  background-color: #fff;
-}
-
-.search-form__pseudo-checkbox:after:checked {
-  content: '';
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  left: 0px;
-  top: 0px;
-  background-color: #fff;
 }
 
 button {
