@@ -80,6 +80,10 @@ fieldset {
   cursor: pointer;
 }
 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
 .search-form__label:has(:focus-visible) {
   box-sizing: content-box;
   /* border-right: 1px #fff solid;
@@ -104,10 +108,6 @@ input {
 
 input:focus {
   outline: none;
-}
-
-input:has(:focus-visible) {
-  outline: 1px #fff solid;
 }
 
 .search-form__fieldset-title {
@@ -158,7 +158,7 @@ button:focus{
 
 button:focus-visible {
   outline: 1px #fff solid;
-  outline-offset: 3px;
+  outline-offset: -3px;
 }
 
 button:hover{
@@ -176,13 +176,6 @@ button:active {
 
 .more-button {
   width: 100%;
-}
-
-.more-button:focus-visible {
-  outline: 1px #fff solid;
-  outline-offset: 3px;
-  margin: 3px;
-  width: calc(100% - 6px);
 }
 
 .content__list {
@@ -218,9 +211,9 @@ button:active {
   text-decoration: underline;
 }
 
-/* .content__card-link_current {
-  background-color: #545050 !important;
-} */
+.content__card-link_current {
+  background-color: #545050;
+}
 
 .content__card-link:active {
   background-color: #545050;
@@ -279,7 +272,6 @@ button:active {
 .result__video-container {
   position: relative;
   width: 711px;
-  max-height: 386px;
   height: 386px;
   margin-bottom: 16px;
 }
